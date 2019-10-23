@@ -29,7 +29,7 @@ class App extends React.Component {
     evt.preventDefault();
 
     const getMovie = async () => {
-      const response = await fetch(`http://www.omdbapi.com/?t=${this.state.value}&apikey=51b5804a`);
+      const response = await fetch(`https://www.omdbapi.com/?t=${this.state.value}&apikey=51b5804a`);
 
       const data = await response.json();
 
